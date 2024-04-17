@@ -30,5 +30,13 @@ And finally run the docker image:
 docker run --rm --name lets-encrypt -it \
     -v PATH_FOLDER/certbot-s3front/letsencrypt:/etc/letsencrypt \
     --env-file env.list \
-    certbot-s3front \
+    certbot-s3front
+```
+Example: 
+
+```bash
+docker run --rm --name lets-encrypt -it \
+    -v /Users/cggg88jorge/Github/certbot-s3front/letsencrypt:/etc/letsencrypt \
+    --env-file env.list \
+    certbot-s3front
 ```
